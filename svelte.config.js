@@ -20,7 +20,7 @@ const config = {
 			handleHttpError: 'warn'
 		},
 		paths: {
-			base: process.argv.includes('dev') ? '' : '/STARS_blog',
+			base: process.env.NODE_ENV === 'production' ? '/STARS_blog' : '',
 		}
 
 	},
