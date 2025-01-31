@@ -12,18 +12,12 @@ const extensions = ['.svelte', '.md'];
 const config = {
 	kit: {
 		adapter: adapter({
-			pages: 'docs',
-			assets: 'docs',
+			pages: 'docs', //github pages serves from /docs, not needed if running own server
 			fallback: null
 		}),
 		prerender: {
 			handleHttpError: 'warn'
 		},
-		paths: {
-			// base: process.env.NODE_ENV === 'production' ? '/STARS_blog' : '',
-			base: '',
-		},
-		appDir: 'app', // github pages wont serve from default '_app'
 
 	},
 	preprocess: [
