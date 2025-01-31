@@ -23,7 +23,7 @@ const config = {
 			// base: process.env.NODE_ENV === 'production' ? '/STARS_blog' : '',
 			base: '',
 		},
-		appDir: 'app',
+		appDir: 'app', // github pages wont serve from default '_app'
 
 	},
 	preprocess: [
