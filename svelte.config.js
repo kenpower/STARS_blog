@@ -19,6 +19,9 @@ const config = {
 		prerender: {
 			handleHttpError: 'warn'
 		},
+		paths: {
+			base: process.argv.includes('dev') ? '' : '/STARS_blog',
+		}
 
 	},
 	preprocess: [
