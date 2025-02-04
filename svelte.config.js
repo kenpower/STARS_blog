@@ -18,7 +18,9 @@ const config = {
 		prerender: {
 			handleHttpError: 'warn'
 		},
-
+		paths: {
+			base: process.env.NODE_ENV === 'development' ? '' : '/STARS_blog' ,
+		},
 	},
 	preprocess: [
 		vitePreprocess(),

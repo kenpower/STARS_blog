@@ -14,6 +14,7 @@
 </script>
 
 <div class="container">
+	{process.env.NODE_ENV}
 	<Hero />
 	<About />
 	{#if posts && posts.length > 0}
