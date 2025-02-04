@@ -18,7 +18,9 @@ const config = {
 		prerender: {
 			handleHttpError: 'warn'
 		},
-
+		paths: {
+			base: '' // Use relative paths
+		}
 	},
 	preprocess: [
 		vitePreprocess(),
