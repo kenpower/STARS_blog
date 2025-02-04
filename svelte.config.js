@@ -19,7 +19,7 @@ const config = {
 			handleHttpError: 'warn'
 		},
 		paths: {
-			base: process.env.NODE_ENV === 'development' ? '' : '/STARS_blog' ,
+			base: process.env.NODE_ENV === 'development' ? '/' : '/STARS_blog' ,
 		},
 	},
 	preprocess: [
